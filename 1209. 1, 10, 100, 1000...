@@ -1,0 +1,9 @@
+n=int(input())
+s=''
+for i in range(n):
+    a=int(input())
+    if (-1+(8*a-7)**(1/2))/2 % 1 == 0:
+        s+='1 '
+    else:
+        s+='0 '
+print(s)
