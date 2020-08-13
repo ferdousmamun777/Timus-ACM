@@ -1,0 +1,16 @@
+import math
+list=[]
+i=1
+while True:
+    try:
+        x = input().split()
+        for i in x:
+            i = int(i)
+            i = math.sqrt(i)
+            list.append(i)
+
+    except EOFError:
+        list.reverse()
+        for i in list:
+            print(i)
+        break
