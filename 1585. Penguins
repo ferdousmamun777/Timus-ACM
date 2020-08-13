@@ -1,0 +1,22 @@
+n=int(input())
+a=0
+b=0
+c=0
+for i in range(n):
+    x=input()
+    if x=="Emperor Penguin":
+        a=a+1
+    if x=="Macaroni Penguin":
+        b=b+1
+    if x=="Little Penguin":
+        c=c+1
+list=[a, b, c]
+
+m=max(list)
+
+if m==a:
+    print("Emperor Penguin")
+elif m==b:
+    print("Macaroni Penguin")
+else:
+    print("Little Penguin")
