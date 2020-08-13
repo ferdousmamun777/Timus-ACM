@@ -1,0 +1,22 @@
+Count = int(input())
+
+Sum = 0
+SatisfactoryMarks = False
+ExcellentMarks = True
+
+for i in range(Count):
+	mark = int(input())
+	Sum += mark
+	if mark == 3:
+		SatisfactoryMarks = True
+	if mark != 5:
+		ExcellentMarks = False
+
+if SatisfactoryMarks:
+	print("None")
+elif ExcellentMarks:
+	print("Named")
+elif Sum / Count >= 4.5:
+	print("High")
+else:
+	print("Common")
