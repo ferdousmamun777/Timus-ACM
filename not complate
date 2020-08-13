@@ -1,0 +1,20 @@
+n=int(input())
+list=[]
+for i in range(n):
+    x=input()
+    list.append(x)
+
+listf=[]
+for i in list:
+    if i not in listf:
+        listf.append(i)
+c=0
+list2=[]
+for i in listf:
+    for j in range(len(list)):
+        if i==list[j]:
+            c=c+1
+    list2.append(c)
+    c=0
+
+print(max(list2))
