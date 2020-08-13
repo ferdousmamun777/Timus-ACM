@@ -1,0 +1,12 @@
+a,b=input().split()
+n=int(a)
+
+k=len(b)
+
+temp=n
+t=k
+while temp-k>0:
+        n*=(temp-k)
+        k+=t
+
+print("%d" %n)
